@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seaf-energy-kernel"
+version = "0.1.0"
+description = "Pure Python reference and C++17 core for sparse sheaf energy equilibrium learning."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Seaf Energy Kernel Contributors"}]
+keywords = ["sheaf", "energy-based-learning", "equilibrium-propagation", "graph-learning"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C++",
+]
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
